@@ -1,0 +1,30 @@
+<template>
+	<div class="slds-brand-band slds-brand-band_medium slds-brand-band_group">
+		<lightning-card>
+			<div class="slds-m-around_medium" if:true={test}>
+				<h1 class="slds-text-heading_large">Trazer dados da Classe</h1>
+				<p>Nome: {nome}</p>
+				<p>Telefone:{telefone}</p>
+				<p>CPF:{cpf}</p>
+				<p>Idate:{idade}</p>
+				<lightning-input data-id="v1" label="Digite valor 1"></lightning-input>
+				<lightning-input data-id="v2" label="Digite valor 2"></lightning-input>
+				<lightning-button id="btt" onclick={calc} label="calc">Calc</lightning-button>
+				<span data-id="result" > </span>
+			</div>
+
+			<div if:false={test}>
+				<h1 class="slds-text-heading_large">Tempo na cidade</h1>
+				<p>Cidade: {nomeCidade}</p>
+				<p>Temperatura:{temperatura} ºC</p>
+				<p>Tempo:{desc}</p>
+				<lightning-input data-id="cidade" label="Digite a cidade"></lightning-input>
+				<lightning-button onclick={pegarTempo} label="Pesquisar">pegarTempo</lightning-button>
+			</div>
+
+		</lightning-card>
+	</div>
+
+	<lightning-button onclick={trocar} label="trocar">trocar</lightning-button>
+
+</template>

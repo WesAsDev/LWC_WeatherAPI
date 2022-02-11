@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/wesasdev.lwc-kzigjz19-fork-kzip10dq",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve PF7j5Z7zfmrdppXUKMRg --open"
+  }
+}
